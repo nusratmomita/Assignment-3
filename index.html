@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+    <!-- sora font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/2c4593a4a7.js" crossorigin="anonymous"></script>
+    <title>Browse 4 Pets</title>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+    </script>
+    <style>
+        .adlam-display-font {
+            font-family: "ADLaM Display", serif;
+        }
+        .sora-font{
+            font-family: "Sora", serif;
+        }
+    </style>
+</head>
+<body class="adlam-display-font">
+    <header class="sora-font bg-[#FFF9F4]">
+        <!-- navbar -->
+        <nav class="flex flex-1 gap-4 px-32 py-2 justify-between">
+            <div>
+                <img src="c1-assets/logo-header.png" alt="">
+            </div>
+            <div>
+                <h4 class="-ml-20 mt-4">Browse<span class="text-[#FFDC26]">4</span>Pets</h4>
+            </div>
+            
+            <div>
+                <ul class="ml-48 mt-4 grid grid-cols-3 gap-4">
+                    <li><a href="">Find a pet</a></li>
+                    <li><a href="">Breeds</a></li>
+                    <li><a href="">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="ml-48 mt-2">
+                <i class="mr-4 fa-regular fa-bell"></i>
+                <i class="mr-4 fa-solid fa-magnifying-glass"></i>
+                <button class="mr-4 border border-[#FFDC26] font-medium text-sm p-2 rounded-xl">Login</button> 
+                <button class="mr-4 border border-[#FFDC26] font-medium text-sm p-2 rounded-xl bg-[#FFDC26]">Register</button>
+            </div>
+        </nav>
+    </header>
+    <main class="lg:container mx-auto">
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
