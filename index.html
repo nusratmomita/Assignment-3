@@ -43,33 +43,45 @@
 <body class="adlam-display-font">
     <header class="sora-font">
         <!-- navbar -->
-        <nav class="flex flex-1 gap-4 px-32 py-2 justify-between bg-[#FFF9F4]">
+        <nav class="flex flex-1 gap-4 px-32 py-2 justify-between bg-[#FFF9F4] ">
             <div>
-                <img src="c1-assets/logo-header.png" alt="">
+                <img src="c1-assets/logo-header.png" alt="logo">
+            </div>
+            <div class="lg:hidden  sm:grid grid-rows-3 ml-70 mt-3">
+                <div class="w-4 h-0.5 bg-[#E76F51]">
+                </div>
+                <div class="w-4 h-0.5 bg-[#E76F51] -mt-2">
+                </div>
+                <div class="w-4 h-0.5 bg-[#E76F51] -mt-4">
+                </div>
             </div>
             <div>
-                <h4 class="-ml-20 mt-4">Browse<span class="text-[#FFDC26]">4</span>Pets</h4>
+                <h4 class="hidden lg:block lg:-ml-20 mt-4">Browse<span class="text-[#FFDC26]">4</span>Pets</h4>
             </div>
             
-            <div>
+            <div class="hidden lg:block">
                 <ul class="ml-48 mt-4 grid grid-cols-3 gap-4">
                     <li><a href="">Find a pet</a></li>
                     <li><a href="">Breeds</a></li>
                     <li><a href="">Contact us</a></li>
                 </ul>
             </div>
-            <div class="ml-48 mt-2">
+            <div class="hidden lg:block lg:ml-48 mt-2">
                 <i class="mr-4 fa-regular fa-bell"></i>
                 <i class="mr-4 fa-solid fa-magnifying-glass"></i>
                 <button class="mr-4 border border-[#FFDC26] font-medium text-sm p-2 rounded-xl">Login</button> 
                 <button class="mr-4 border border-[#FFDC26] font-medium text-sm p-2 rounded-xl bg-[#FFDC26]">Register</button>
             </div>
         </nav>
+        <div class="lg:hidden">
+            <div class="w-158 h-0.5 bg-[#0a0a0a]">
+            </div>
+        </div>
         <!-- banner -->
-        <div class="mt-24 flex justify-between">
+        <div class="flex mt-24 flex-col lg:justify-between">
             <div class="ml-24 space-y-4">
-                <h3 class="text-text-color font-bold text-5xl">Pamper Your Pet, <br>Because They Deserve the Best</h3>
-                <p class="font-normal text-lg text-gray-500">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+                <h3 class="text-text-color font-bold text-5xl">Pamper Your Pet, Because <br>They Deserve the Best</h3>
+                <p class="font-normal text-lg text-gray-500">Discover a world of treats, toys, and essentials handpicked for <br>your furry friends. Shop now and make tails wag with joy!</p>
                 
                 <!-- added some animation -->
                 <!-- made some changes to the font and text style so that the whole thing looks better -->
@@ -80,16 +92,16 @@
                 Find a pet</button>
             </div>
             <div>
-                <img  src="c1-assets/cat-big.png" alt="cat">
+                <img  class="w-300 h-200"src="c1-assets/cat-big.png" alt="cat">
             </div>
         </div>
     </header>
 
-    <main class="lg:container mx-auto">
+    <main class="relative">
         <!-- category section -->
         <section>
-            <h3 class="pl-20 font-bold text-2xl mb-4">Browse By Categories</h3>
-            <div class="ml-20 grid grid-cols-6 gap-3">
+            <h3 class="pl-20 font-bold text-2xl mt-12 mb-4">Browse By Categories</h3>
+            <div class="ml-20 grid grid-cols-2 gap-3 lg:grid-cols-6">
                 <div class="card bg-[#F9DF8A] w-45 h-50 shadow-xl">
                     <div class="p-3 bg-white rounded-full absolute top-5 left-14">
                         <figure>
@@ -181,7 +193,7 @@
         <section class="mt-30 bg-[#FFF9F4]">
             <div class="p-10 -mt-12">
                 <h3 class="mt-24 pl-10 font-bold text-2xl mb-4">Trending Pet Products</h3>
-                <div class="flex gap-48 items-center">
+                <div class="flex flex-col gap-44 items-center lg:flex-row">
                     <!-- left part -->
                     <div class="ml-10 p-8 card bg-[#F9DF8A] w-100 h-110 space-y-4 relative">
                             <h3 class="mt-12 font-bold text-4xl">T-shirt for Dogs</h3>
@@ -194,7 +206,7 @@
                             </div>
                     </div>
                     <!-- right part -->
-                    <div class="grid grid-cols-3 grid-rows-3 gap-8 ">
+                    <div class="grid grid-cols-2 grid-rows-2 gap-8 lg:grid-cols-3 lg:grid-rows-3">
                         <!-- dog -->
                         <div class="sora-font">
                             <div class="bg-white flex gap-4 w-50 h-30 p-5 rounded-xl">
@@ -365,6 +377,7 @@
         <!-- extra part -->
         <div class="border border-yellow-950 rounded-4xl text-center mt-20 bg-yellow-100 w-1/2 ml-100">
             <h1 class="font-bold text-2xl p-5 m-5">Already sold clothes  for <span class="underline text-red-400">Pets</span></h1>
+            <h4 class="text-red-500 font-normal text-lg -mt-8 mb-4">Swipe Left to view</h4>
             <div class="carousel rounded-box w-64 mb-12">
                 <div class="carousel-item w-full">
                   <img
@@ -390,10 +403,11 @@
         <!-- low price section -->
         <section class="mt-24">
             <h3 class="mt-24 ml-24 font-bold text-2xl mb-4">Everyday low Price</h3>
-            <div class="flex gap-2 ">
+            <div class="flex flex-col gap-2 lg:flex-row">
                 <!-- left side -->
                 <div class="flex w-[60%] ml-24">
                     <!-- text -->
+                    <!-- for some reasons the gradient does not work -->
                     <div class="space-y-2 mb-25 p-12 bg-linear-to-r from-[#F8CCFB] to-[#ACD2FD] border border-black w-200 h-65">
                         <h4 class="sora-font text-xl font-normal">Under Price</h4>
                         <h3 class="text-2xl font-bold">Pet Grooming Mitt</h3>
@@ -420,10 +434,25 @@
                 </div>
             </div>
         </section>
+
+        <!-- News section -->
+        <div class="hidden lg:mt-20 lg:flex justify-center items-center absolute top-460 left-105 ">
+            <div class="bg-[#FFF9F4] w-160 h-90 mb-12 flex justify-between items-center p-6">
+                <div>
+                    <img src="c1-assets/cute-pet-mid.png" alt="pet">
+                </div>
+                <div class="mt-10 p-6 grid grid-rows-4 space-y-4">
+                    <h3 class="mb-2">Get Pawsome News!</h3>
+                    <h4 class="mt-0">Exclusive training tips, tricks, product deals, and more.</h4>
+                    <input class="bg-white w-80 h-15 rounded-lg p-2" type="email" placeholder="Enter email...">
+                    <button class="bg-[#FFDC26] w-40 h-10 rounded-lg p-2 mb-20">Subscribe</button>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <footer class="footer bg-[#FFDC26] p-20">
-        <div>
+    <footer class="footer bg-[#FFDC26] p-20 ">
+        <div class="mt-70">
             <div class="flex gap-3">
                 <div>
                     <img src="c1-assets/logo-footer.png" alt="">
@@ -438,12 +467,12 @@
             
    
     
-    <nav class="mt-2 text-black sora-font text-lg">
+    <nav class="mt-70 text-black sora-font text-lg">
         <a class="link link-hover">Find a pet</a>
         <a class="link link-hover">Breeds</a>
         <a class="link link-hover">Contact us</a>
     </nav>
-    <div class="mt-15">
+    <div class="mt-70">
         <h6 class="text-black sora-font text-lg">Follow us</h6>
         <div class="grid grid-flow-col gap-8">
             <i class="fa-brands fa-facebook"></i>
